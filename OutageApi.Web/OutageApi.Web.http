@@ -1,0 +1,6 @@
+@OutageApi.Web_HostAddress = http://localhost:5092
+
+GET {{OutageApi.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
