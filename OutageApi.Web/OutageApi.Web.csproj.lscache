@@ -57,15 +57,12 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-Controllers/
- OutagesController.cs
- WeatherForecastController.cs
+Controllers/OutagesController.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  OutageApi.Web.AssemblyInfo.cs
  OutageApi.Web.GlobalUsings.g.cs
 Program.cs
-WeatherForecast.cs
 
 [metadataReferences]
 ../../../../../../../usr/local/share/dotnet/packs/Microsoft.AspNetCore.App.Ref/10.0.3/ref/net10.0/
