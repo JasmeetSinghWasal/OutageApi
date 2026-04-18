@@ -381,6 +381,7 @@ Program.cs
 <NUGET>/
  microsoft.aspnetcore.openapi/10.0.3/lib/net10.0/Microsoft.AspNetCore.OpenApi.dll
  microsoft.openapi/2.4.1/lib/net8.0/Microsoft.OpenApi.dll
+ scalar.aspnetcore/2.14.0/lib/net10.0/Scalar.AspNetCore.dll
  swashbuckle.aspnetcore.swagger/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll
  swashbuckle.aspnetcore.swaggergen/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
  swashbuckle.aspnetcore.swaggerui/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll

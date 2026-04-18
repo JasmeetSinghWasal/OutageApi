@@ -1,6 +1,7 @@
 using OutageApi.Application.Services;
 using OutageApi.Application.Interfaces;
 using OutageApi.Infrastructure.Repositories;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,8 +21,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.MapOpenApi();
+    app.MapScalarApiReference();   // UI at /scalar/v1
 }
 
 app.UseHttpsRedirection();
