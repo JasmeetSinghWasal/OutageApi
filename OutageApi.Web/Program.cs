@@ -1,3 +1,7 @@
+using OutageApi.Application.Services;
+using OutageApi.Application.Interfaces;
+using OutageApi.Infrastructure.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+
+//Inject dependencies
+builder.Services.AddSingleton<IOutageRepository, InMemoryOutageRepository>();
+builder.Services.AddSingleton<IOutageService, OutageService>();
 
 var app = builder.Build();
 

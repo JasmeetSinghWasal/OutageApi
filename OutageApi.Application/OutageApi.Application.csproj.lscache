@@ -57,10 +57,17 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [sourceFiles]
 Class1.cs
+DTOs/
+ OutageResponse.cs
+ OutageType.cs
+Interfaces/
+ IOutageRepository.cs
+ IOutageService.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  OutageApi.Application.AssemblyInfo.cs
  OutageApi.Application.GlobalUsings.g.cs
+Services/OutageServices.cs
 
 [metadataReferences]
 ../../../../../../../usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.3/ref/net10.0/

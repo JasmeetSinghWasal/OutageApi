@@ -61,6 +61,8 @@ obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  OutageApi.Infrastructure.AssemblyInfo.cs
  OutageApi.Infrastructure.GlobalUsings.g.cs
+Repositories/InMemoryOutageRepository.cs
+Seed/OutageSeedData.cs
 
 [metadataReferences]
 ../../../../../../../usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.3/ref/net10.0/
@@ -231,7 +233,9 @@ obj/Debug/net10.0/
  System.Xml.XPath.dll
  System.Xml.XPath.XDocument.dll
  WindowsBase.dll
-../OutageApi.Application/obj/Debug/net10.0/ref/OutageApi.Application.dll
+../
+ OutageApi.Application/obj/Debug/net10.0/ref/OutageApi.Application.dll
+ OutageApi.Domain/obj/Debug/net10.0/ref/OutageApi.Domain.dll
 
 [analyzerReferences]
 ../../../../../../../usr/local/share/dotnet/packs/Microsoft.NETCore.App.Ref/10.0.3/analyzers/dotnet/cs/

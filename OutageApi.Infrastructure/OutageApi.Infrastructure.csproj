@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="../OutageApi.Application/OutageApi.Application.csproj" />
+    <ProjectReference Include="../OutageApi.Domain/OutageApi.Domain.csproj" />
   </ItemGroup>
 
 </Project>

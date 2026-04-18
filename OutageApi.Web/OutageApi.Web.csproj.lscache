@@ -57,7 +57,9 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-Controllers/WeatherForecastController.cs
+Controllers/
+ OutagesController.cs
+ WeatherForecastController.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  OutageApi.Web.AssemblyInfo.cs
@@ -377,10 +379,14 @@ WeatherForecast.cs
  WindowsBase.dll
 ../
  OutageApi.Application/obj/Debug/net10.0/ref/OutageApi.Application.dll
+ OutageApi.Domain/obj/Debug/net10.0/ref/OutageApi.Domain.dll
  OutageApi.Infrastructure/obj/Debug/net10.0/ref/OutageApi.Infrastructure.dll
 <NUGET>/
  microsoft.aspnetcore.openapi/10.0.3/lib/net10.0/Microsoft.AspNetCore.OpenApi.dll
- microsoft.openapi/2.0.0/lib/net8.0/Microsoft.OpenApi.dll
+ microsoft.openapi/2.4.1/lib/net8.0/Microsoft.OpenApi.dll
+ swashbuckle.aspnetcore.swagger/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll
+ swashbuckle.aspnetcore.swaggergen/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+ swashbuckle.aspnetcore.swaggerui/10.1.7/lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 
 [analyzerReferences]
 ../../../../../../../usr/local/share/dotnet/packs/Microsoft.AspNetCore.App.Ref/10.0.3/analyzers/dotnet/cs/
