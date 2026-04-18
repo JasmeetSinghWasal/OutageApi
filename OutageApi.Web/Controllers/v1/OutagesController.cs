@@ -1,12 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using OutageApi.Application.Interfaces;
 using OutageApi.Application.DTOs;
+using Asp.Versioning;
 
-namespace OutageApi.Web.Controllers;
+namespace OutageApi.Web.Controllers.V1;
 
 [ApiController]
-[Route("api/[controller]")]
-
+[Route("api/v{version:apiVersion}[controller]")]
+[ApiVersion("1.0")]
 public class OutagesController : ControllerBase
 {
     private readonly IOutageService _outageService;

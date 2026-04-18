@@ -57,7 +57,9 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
-Controllers/OutagesController.cs
+Controllers/
+ v1/OutagesController.cs
+ v2/OutagesController.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  OutageApi.Web.AssemblyInfo.cs
@@ -379,6 +381,10 @@ Program.cs
  OutageApi.Domain/obj/Debug/net10.0/ref/OutageApi.Domain.dll
  OutageApi.Infrastructure/obj/Debug/net10.0/ref/OutageApi.Infrastructure.dll
 <NUGET>/
+ asp.versioning.abstractions/8.1.0/lib/net8.0/Asp.Versioning.Abstractions.dll
+ asp.versioning.http/8.1.1/lib/net8.0/Asp.Versioning.Http.dll
+ asp.versioning.mvc.apiexplorer/8.1.1/lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll
+ asp.versioning.mvc/8.1.1/lib/net8.0/Asp.Versioning.Mvc.dll
  microsoft.aspnetcore.openapi/10.0.3/lib/net10.0/Microsoft.AspNetCore.OpenApi.dll
  microsoft.openapi/2.4.1/lib/net8.0/Microsoft.OpenApi.dll
  scalar.aspnetcore/2.14.0/lib/net10.0/Scalar.AspNetCore.dll
