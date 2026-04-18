@@ -12,9 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
 // builder.Services.AddSwaggerGen();
 builder.Services.AddApiVersioning(options =>
 {
@@ -35,10 +32,10 @@ builder.Services.AddApiVersioning(options =>
 });
 
 // Setup Serilog
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
-    .CreateLogger();
+// Log.Logger = new LoggerConfiguration()
+//     .WriteTo.Console()
+//     .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+//     .CreateLogger();
 
 // Will use elow Serilog from appsettings.json
 // builder.Host.UseSerilog((context, config) =>
@@ -49,6 +46,7 @@ Log.Logger = new LoggerConfiguration()
 //           .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day);
 // }); 
 
+//Fetch serolig settings from appsettings.json
 builder.Host.UseSerilog((context, config) => config.ReadFrom.Configuration(context.Configuration));
 
 builder.Services.AddOpenApi("v1", options =>
@@ -81,11 +79,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseSerilogRequestLogging();
+
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.UseSerilogRequestLogging();
-
 
 app.Run();
