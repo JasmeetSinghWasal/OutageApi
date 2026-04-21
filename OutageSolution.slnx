@@ -1,2 +1,6 @@
 <Solution>
+  <Project Path="OutageApi.Application/OutageApi.Application.csproj" />
+  <Project Path="OutageApi.Domain/OutageApi.Domain.csproj" />
+  <Project Path="OutageApi.Infrastructure/OutageApi.Infrastructure.csproj" />
+  <Project Path="OutageApi.Web/OutageApi.Web.csproj" />
 </Solution>

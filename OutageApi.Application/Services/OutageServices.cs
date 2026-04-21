@@ -17,8 +17,6 @@ public class OutageService : IOutageService
     {
         IEnumerable<Outage>? query = _repository.GetAll();
 
-      
-
         return query
             .OrderByDescending(o => o.ReportedAt)
             .Select(MapToResponse);

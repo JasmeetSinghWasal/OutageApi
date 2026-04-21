@@ -6,7 +6,7 @@ using Asp.Versioning;
 namespace OutageApi.Web.Controllers.V1;
 
 [ApiController]
-[Route("api/v{version:apiVersion}[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 [ApiVersion("1.0")]
 public class OutagesController : ControllerBase
 {
